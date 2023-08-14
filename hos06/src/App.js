@@ -1,6 +1,6 @@
 // Section 6 - QueryParams.js
 import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Details from './Details';
@@ -16,16 +16,16 @@ class App extends Component {
           <nav className="navbar">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <Link to="/details">Details</Link>
+                <NavLink to="/details">Details</NavLink>
               </li>
               <li>
-                <Link to="/team">Team</Link>
+                <NavLink to="/team">Team</NavLink>
               </li>
             </ul>
           </nav>
